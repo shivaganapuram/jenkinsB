@@ -10,7 +10,7 @@ pipeline {
         }
         stage('docker start') {
           steps {
-            sh 'docker run -it ubuntu /bin/bash '
+            sh 'docker run -it ubuntu echo "hello blueocean"'
           }
         }
       }
